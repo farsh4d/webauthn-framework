@@ -1,6 +1,6 @@
 {
     "name": "farsh4d/webauthn-framework",
-    "description": "FIDO2/Webauthn library for PHP and Symfony Bundle.",
+    "description": "FIDO2/Webauthn library for PHP and Symfony Bundle. This Branch is a cpoy of web-auth/webauthn-framework 4.9.2 with some changes for personal use.",
     "type": "symfony-bundle",
     "license": "MIT",
     "keywords": [
@@ -56,7 +56,7 @@
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0",
         "psr/log": "^1.0|^2.0|^3.0",
-        "spomky-labs/cbor-php": "^3.0",
+        "spomky-labs/cbor-php": "~3.1.0",
         "spomky-labs/pki-framework": "^1.0",
         "symfony/config": "^6.1|^7.0",
         "symfony/dependency-injection": "^6.1|^7.0",
