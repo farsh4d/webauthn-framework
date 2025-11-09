@@ -1,5 +1,5 @@
 {
-    "name": "web-auth/webauthn-framework",
+    "name": "farsh4d/webauthn-framework",
     "description": "FIDO2/Webauthn library for PHP and Symfony Bundle.",
     "type": "symfony-bundle",
     "license": "MIT",

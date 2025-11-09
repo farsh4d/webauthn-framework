@@ -45,6 +45,8 @@ final class CheckOrigin implements CeremonyStep
             $scheme === 'https' || throw AuthenticatorResponseVerificationException::create(
                 'Invalid scheme. HTTPS required.'
             );
+        } else {
+            return;
         }
         $clientDataRpId = $parsedRelyingPartyId['host'] ?? '';
         $clientDataRpId !== '' || throw AuthenticatorResponseVerificationException::create('Invalid origin rpId.');
