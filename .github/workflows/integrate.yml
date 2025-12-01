@@ -15,7 +15,7 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
 
       - name: "Check file permissions"
         run: |
@@ -36,7 +36,7 @@ jobs:
           coverage: "none"
 
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
 
       - name: "Install dependencies"
         uses: "ramsey/composer-install@v3"
@@ -70,7 +70,7 @@ jobs:
           coverage: "xdebug"
 
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
         with:
           fetch-depth: 0
 
@@ -107,7 +107,7 @@ jobs:
           coverage: "xdebug"
 
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
         with:
           fetch-depth: 0
 
@@ -135,7 +135,7 @@ jobs:
           coverage: "none"
 
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
 
       - name: "Validate Composer configuration"
         run: "composer validate"
@@ -167,7 +167,7 @@ jobs:
           coverage: "none"
 
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
 
       - name: "Check adherence to EditorConfig"
         uses: "greut/eclint-action@v0"
@@ -200,7 +200,7 @@ jobs:
           coverage: "xdebug"
 
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
 
       - name: "Fetch Git base reference"
         run: "git fetch --depth=1 origin ${GITHUB_BASE_REF}"
@@ -222,7 +222,7 @@ jobs:
     runs-on: "ubuntu-20.04"
     steps:
       - name: "Checkout code"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v6"
 
       - name: "Check exported files"
         run: |
